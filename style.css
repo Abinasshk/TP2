@@ -1301,129 +1301,58 @@ Liste des blocs de cours par type_de_cours
   display: none;
 }
 
-/* local burger
+/* local galerie
 --------------------------------------------- */
-/* --------------------------------------------------------------------------------------
-Les variables 
----------------------------------------------------------------------------------------- */
-/*---------------------------------------------------------------------------------------
-Le bouton buger
------------------------------------------------------------------------------------------ */
-#burger {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
   overflow: hidden;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
 }
 
-#burger div {
-  top: 0;
-  left: 0;
+.galerie .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+.galerie .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.galerie .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.galerie .flip-card-front, .galerie .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
+  /* Safari */
+  backface-visibility: hidden;
 }
 
-#burger div:nth-of-type(1) {
-  background-color: #3ddada;
-  clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+.galerie .flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
 
-#burger div:nth-of-type(2) {
-  background-color: #3d79da;
-  clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-}
-
-#burger div:nth-of-type(3) {
-  background-color: #dab03d;
-  clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-}
-
-/* -----------------------------------------------------------------------------------
-La barre du haut
--------------------------------------------------------------------------------------- */
-@keyframes ouvreX1 {
-  0% {
-    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-  }
-  100% {
-    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-  }
-}
-
-@keyframes fermeX1 {
-  0% {
-    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
-  }
-  100% {
-    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
-  }
-}
-
-.ouvreX1 {
-  animation: ouvreX1 0.1s both;
-}
-
-.fermeX1 {
-  animation: fermeX1 0.1s both;
-}
-
-/* -----------------------------------------------------------------------------------
-La barre du bas
--------------------------------------------------------------------------------------- */
-@keyframes ouvreX3 {
-  0% {
-    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-  }
-  100% {
-    clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
-  }
-}
-
-@keyframes fermeX3 {
-  0% {
-    clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
-  }
-  100% {
-    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
-  }
-}
-
-.ouvreX3 {
-  animation: ouvreX3 0.1s both;
-}
-
-.fermeX3 {
-  animation: fermeX3 0.1s both;
-}
-
-/* -----------------------------------------------------------------------------------
-La barre du millieu
--------------------------------------------------------------------------------------- */
-@keyframes ouvreX2 {
-  0% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  }
-  100% {
-    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-  }
-}
-
-@keyframes fermeX2 {
-  0% {
-    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
-  }
-  100% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  }
-}
-
-.ouvreX2 {
-  animation: ouvreX2 0.1s both;
-}
-
-.fermeX2 {
-  animation: fermeX2 0.1s both;
+.galerie .flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
 }
 /*# sourceMappingURL=style.css.map */
