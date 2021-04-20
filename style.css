@@ -1306,6 +1306,7 @@ Liste des blocs de cours par type_de_cours
 .galerie {
   display: flex;
   flex-wrap: wrap;
+  background-color: brown;
   overflow: hidden;
   margin-right: 20px;
   /* This container is needed to position the front and back side */
