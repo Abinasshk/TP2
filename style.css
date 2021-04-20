@@ -1331,12 +1331,12 @@ Liste des blocs de cours par type_de_cours
   height: 100%;
   text-align: center;
   border: solid 2pc grey;
-  transition: transform 0.8s;
+  transition: transform 6s;
   transform-style: preserve-3d;
 }
 
 .galerie .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 .galerie .flip-card-front, .galerie .flip-card-back {
@@ -1350,7 +1350,7 @@ Liste des blocs de cours par type_de_cours
 
 .galerie .flip-card-front {
   color: black;
-  margin: 20px;
+  margin: 10px;
 }
 
 .galerie .flip-card-back {
