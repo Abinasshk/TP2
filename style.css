@@ -1306,8 +1306,8 @@ Liste des blocs de cours par type_de_cours
 .galerie {
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
   overflow: hidden;
+  margin-right: 20px;
   /* This container is needed to position the front and back side */
   /* Do an horizontal flip when you move the mouse over the flip box container */
   /* Position the front and back side */
@@ -1317,9 +1317,9 @@ Liste des blocs de cours par type_de_cours
 
 .galerie .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 200px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  overflow: hidden;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
 }
@@ -1343,16 +1343,19 @@ Liste des blocs de cours par type_de_cours
   height: 100%;
   /* Safari */
   backface-visibility: hidden;
+  margin-left: 5px;
 }
 
 .galerie .flip-card-front {
-  background-color: #bbb;
   color: black;
+  margin: 20px;
 }
 
 .galerie .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: beige;
+  color: black;
   transform: rotateY(180deg);
+  overflow: hidden;
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */

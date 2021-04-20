@@ -1,14 +1,16 @@
 .galerie {
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    
     overflow: hidden;
+    margin-right: 20px;
     
     .flip-card {
         background-color: transparent;
-        width: 300px;
+        width: 200px;
         height: 200px;
-        border: 1px solid #f1f1f1;
+        
+        overflow: hidden;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
       }
       
@@ -34,19 +36,24 @@
         height: 100%;
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
+        margin-left: 5px;
       }
       
       /* Style the front side (fallback if image is missing) */
       .flip-card-front {
-        background-color: #bbb;
+        
         color: black;
+        margin: 20px;
       }
       
       /* Style the back side */
       .flip-card-back {
-        background-color: dodgerblue;
-        color: white;
+        background-color: beige;
+        color: black;
         transform: rotateY(180deg);
+        overflow: hidden;
+        font-size: 11px;
+        
       }
 
    

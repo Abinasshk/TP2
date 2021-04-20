@@ -17,8 +17,8 @@ global $tPropriété;
     </div>
     <div class="flip-card-back">
       <h1><a href="<?php echo get_permalink() ?>"><?php echo get_the_title();?></a></h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+      <p>Étudiants de la technique d'integration de multimédia</p>
+      <p>Projet dans le programme</p>
     </div>
   </div>
 </article>
