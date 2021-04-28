@@ -19,6 +19,9 @@
 
 	<?php wp_head(); ?>
 </head>
+<?php if (is_front_page() ) : ?>
+<?php endif; ?>
+<body <?php body_class(is_front_page() && is_category() ? 'no-sidebar' : '') ; ?> >
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
