@@ -681,6 +681,7 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
+  background-color: grey;
 }
 
 .site-footer {
@@ -1385,4 +1386,46 @@ Liste des blocs de cours par type_de_cours
   overflow: hidden;
   font-size: 11px;
 }
+
+/* local page
+--------------------------------------------- */
+.site-title {
+  font-family: "Montserrat", monospace;
+  font-weight: bold;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
+  margin-bottom: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-description {
+  margin-top: 0;
+  font-family: "Montserrat", monospace;
+  font-weight: normal;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
+}
+
+.page-header, .entry-header {
+  margin-top: 130px;
+}
+
+.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
+  font-size: 4rem;
+  color: red;
+  margin-bottom: 0;
+}
+
+.page-header .archive-description, .entry-header .archive-description {
+  font-size: 1rem;
+  color: grey;
+}
+
+.page-header .archive-description p, .entry-header .archive-description p {
+  margin: 0;
+}
+
+/* local formulaire
+--------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
