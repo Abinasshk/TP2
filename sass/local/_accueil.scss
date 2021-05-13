@@ -1,5 +1,5 @@
 body.home{
-    background-color : fff;
+    background-color : lightgray;
     height : 500vh;
     width : 100vw;
     overflow-x :hidden;
@@ -16,7 +16,7 @@ body.home::after{
     right : 0;
     @include tablet{
         clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
-         background-color: rgb(68, 117, 173);
+         background-color: rgb(255, 0, 0);
     }
 
    z-index: -1;
@@ -38,8 +38,9 @@ body.home::after{
 .site-title {
 
     font-family: $font__sitetitle ;
+    
     font-weight: bold;
-    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},4rem);
     margin-bottom: 0;
     a {
         text-decoration: none;

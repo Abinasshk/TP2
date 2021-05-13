@@ -2,8 +2,9 @@
 
     font-family: $font__sitetitle ;
     font-weight: bold;
-    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},6rem);
     margin-bottom: 0;
+   
     a {
         text-decoration: none;
     }
@@ -13,23 +14,27 @@
     margin-top : 0;
     font-family: $font__sitetitle ;
     font-weight: normal;
-    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
+    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
 }
 
 .page-header, .entry-header{
-margin-top: 130px;
+margin-top: 13px;
 
 .page-title,.entry-title{
-    font-size: 4rem;
+    font-size: 2rem;
     color: red;
     margin-bottom: 0;
+    margin-right: 3rem;
+    background-color: lightgray;
 }
 .archive-description{
-    font-size: 1rem;
+    font-size: .5rem;
     color: grey ;
     p{
         margin: 0;
     }
+   
 }
+
 
 }
