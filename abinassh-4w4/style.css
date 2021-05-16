@@ -1106,7 +1106,7 @@ menu tablet
 /* local
 --------------------------------------------- */
 body.home {
-  background-color: lightgray;
+  background-color: #696666;
   height: 500vh;
   width: 100vw;
   overflow-x: hidden;
@@ -1185,7 +1185,9 @@ Liste des blocs de cours par type_de_cours
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #aaa;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px white;
+  background-color: red;
   width: 95%;
   margin: 1%;
   padding: 1rem;
@@ -1195,12 +1197,15 @@ Liste des blocs de cours par type_de_cours
 .home .cours section.bloc article p {
   margin: .4rem;
   font-size: 1rem;
+  align-items: center;
 }
 
 .home .cours section.bloc article a {
   font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: fantasy;
 }
 
 @media (min-width: 800px) {
@@ -1215,6 +1220,10 @@ Liste des blocs de cours par type_de_cours
     width: 31%;
     margin: 1%;
   }
+}
+
+.home .cours .cours {
+  background-color: red;
 }
 
 /* local carrousel
@@ -1289,16 +1298,26 @@ Liste des blocs de cours par type_de_cours
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
-  font-size: .8rem;
+  font-size: 1rem;
+  justify-items: center;
+  margin-left: 10rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: fantasy;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: 1.2rem;
   text-decoration: none;
+  margin-left: 20%;
+  color: black;
+  font-family: sans-serif;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #00ff37;
+  background-color: red;
+  border: solid 2px black;
+  box-shadow: 10px 10px 10px white;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
@@ -1420,9 +1439,8 @@ Liste des blocs de cours par type_de_cours
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
   font-size: 2rem;
   color: red;
-  margin-bottom: 0;
-  margin-right: 3rem;
-  background-color: lightgray;
+  text-shadow: 2px 2px black;
+  align-items: center;
 }
 
 .page-header .archive-description, .entry-header .archive-description {

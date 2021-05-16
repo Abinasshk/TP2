@@ -18,14 +18,16 @@
 }
 
 .page-header, .entry-header{
-margin-top: 13px;
+    margin-top: 13px;
 
 .page-title,.entry-title{
     font-size: 2rem;
     color: red;
-    margin-bottom: 0;
-    margin-right: 3rem;
-    background-color: lightgray;
+    text-shadow: 2px 2px black;
+    align-items: center;
+   
+    
+    
 }
 .archive-description{
     font-size: .5rem;
