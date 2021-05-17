@@ -69,6 +69,10 @@ Liste des blocs de cours par type_de_cours
     flex-direction: column;
     h2 {
         text-align: center;
+        color: white;
+        text-shadow: 5px 5px black;
+        text-decoration: underline;
+        font-size: 3em;
         
     }
     section.bloc {
@@ -88,6 +92,7 @@ Liste des blocs de cours par type_de_cours
             margin : 1%;
             padding  : 1rem;
             text-align : center;
+            
             p {
                 margin: .4rem;
                 font-size: 1rem;
@@ -101,6 +106,13 @@ Liste des blocs de cours par type_de_cours
                 text-shadow: 2px 2px black;
                 font-family: fantasy;
             }
+          
+            &:nth-of-type(5){
+                
+                margin-left: 41em;
+            }
+            
+            
         }
         @include tablet {
             article {
@@ -114,10 +126,9 @@ Liste des blocs de cours par type_de_cours
             margin : 1%;
             }
         }
+        
     }
-    .cours{
-        background-color: red;
-    }
+    
 }
 
 

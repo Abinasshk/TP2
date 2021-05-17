@@ -4,6 +4,7 @@
     font-weight: bold;
     font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},6rem);
     margin-bottom: 0;
+    text-shadow: black 5px 5px;
    
     a {
         text-decoration: none;
@@ -16,6 +17,7 @@
     font-weight: normal;
     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
 }
+
 
 .page-header, .entry-header{
     margin-top: 13px;
