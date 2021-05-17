@@ -1,3 +1,6 @@
+.site{
+    background-color: grey;
+}
 .site-title {
 
     font-family: $font__sitetitle ;
@@ -18,19 +21,21 @@
     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
 }
 
-
-.page-header, .entry-header{
+.page-header,.entry-header{
     margin-top: 13px;
-
 .page-title,.entry-title{
+    margin-top: 2em;
     font-size: 2rem;
     color: red;
     text-shadow: 2px 2px black;
     align-items: center;
-   
-    
-    
+
+.page-content,.entry-content{
+    font-family: fantasy;
 }
+
+}
+
 .archive-description{
     font-size: .5rem;
     color: grey ;

@@ -9,9 +9,8 @@
 
 get_header();
 ?>
-///////////////////////////////////////////////// ARCHIVE.PHP
-	<main id="primary" class="site-main">
 
+	<main id="primary" class="site-main">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

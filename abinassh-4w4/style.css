@@ -886,7 +886,7 @@ menu tablet
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  margin: 0 0 25em;
 }
 
 .updated:not(.published) {
@@ -895,11 +895,12 @@ menu tablet
 
 .page-content,
 .entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
+.entry-summary,
+.site-footer {
+  margin: 1em 0 0;
   margin-right: 3rem;
-  font-size: 1rem;
-  font-family: sans-serif;
+  font-size: .8rem;
+  font-family: Arial, Helvetica, sans-serif;
   box-shadow: red 5px 5px;
   background-color: #fba7a7;
   color: black;
@@ -1360,7 +1361,7 @@ Liste des blocs de cours par type_de_cours
 .galerie {
   display: flex;
   flex-wrap: wrap;
-  background-color: brown;
+  background-color: red;
   overflow: hidden;
   margin-right: 20px;
   /* This container is needed to position the front and back side */
@@ -1418,6 +1419,10 @@ Liste des blocs de cours par type_de_cours
 
 /* local page
 --------------------------------------------- */
+.site {
+  background-color: grey;
+}
+
 .site-title {
   font-family: "Montserrat", monospace;
   font-weight: bold;
@@ -1442,10 +1447,15 @@ Liste des blocs de cours par type_de_cours
 }
 
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
+  margin-top: 2em;
   font-size: 2rem;
   color: red;
   text-shadow: 2px 2px black;
   align-items: center;
+}
+
+.page-header .page-title .page-content, .page-header .page-title .entry-content, .page-header .entry-title .page-content, .page-header .entry-title .entry-content, .entry-header .page-title .page-content, .entry-header .page-title .entry-content, .entry-header .entry-title .page-content, .entry-header .entry-title .entry-content {
+  font-family: fantasy;
 }
 
 .page-header .archive-description, .entry-header .archive-description {
